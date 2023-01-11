@@ -1,32 +1,24 @@
+function hideResult() {
+  document.getElementById("moderate").setAttribute("class", "hidden");
+  document.getElementById("liberal").setAttribute("class", "hidden");
+  document.getElementById("conservative").setAttribute("class", "hidden");
+  document.getElementById("q2").setAttribute("class", "hidden");
+  document.getElementById("q3").setAttribute("class", "hidden");
+  document.getElementById("q4").setAttribute("class", "hidden");
+}
 
-// let yesclick = document.querySelector(".yes");
-// let countyes = 0;
-
-// yesclick.addEventListener("click", function() {
-//   countyes += 1;
-//   console.log(countyes);
-// });
-
-// const noclick = -1;
-
-// function hideResult() {
-//   document.getElementById("message1").setAttribute("class", "hidden");
-//   document.getElementById("message2").setAttribute("class", "hidden");
-//   document.getElementById("message3").setAttribute("class", "hidden");
-// }
-
-// window.onload = function() {
+window.onload = function() {
 
   
-//   hideResult();
-//   document.querySelector("form").onsubmit = function(event) {
+  hideResult();
+  document.querySelector("form").onsubmit = function(event) {
 
-//     event.preventDefault();
+    event.preventDefault();
 
-//     document.getElementById("message1").removeAttribute("class");
+    document.getElementById("moderate").removeAttribute("class");
 
-//   };
-// }
+  };
+}
 
 
 let buttonYes = document.getElementById("yes");
