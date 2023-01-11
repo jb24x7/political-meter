@@ -28,10 +28,15 @@
 //   };
 // }
 
-let buttonHome = document.getElementsByClassName("button-home");
-let CountButtonHomeClicks = 0;
 
-buttonHome.addEventListener("click", function() {
-  CountButtonHomeClicks += 1;
-  console.log(CountButtonHomeClicks);
-});
+let buttonYes = document.getElementById("yes");
+  countYes = 0;
+buttonYes.onclick = function() {
+  countYes += 1;
+};
+
+let buttonNo = document.getElementById("no");
+  countNo = 0;
+buttonNo.onclick = function() {
+  countNo -= 1;
+};
