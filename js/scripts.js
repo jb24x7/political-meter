@@ -31,7 +31,7 @@ buttonYes.onclick = function() {
 
 let buttonNo = document.getElementById("no");
   countNo = 0;
-buttonNo.onclick = function() {
+buttonNo.addEventListener("click", function() {
   countNo -= 1;
   buttonNo.innerHTML = "NO:" + countNo;
-};
+});
